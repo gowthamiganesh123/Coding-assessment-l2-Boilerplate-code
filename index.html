@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <!-- REPLACE THIS WITH YOUR PROJECT NAME. EXAMPLE - Category tabs -->
-    <title>Coding Assesment L2 boilerplate</title>
-
+    <title>Product Details</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <!-- Your code goes here -->
     <div class="container">
-        <a href="https://github.com/mmdmrishabh/Coding-assessment-l2-Boilerplate-code/blob/main/Readme.md" target="_blank">Read how to work with boilerplate</a>
+        <div class="product-image">
+            <img src="product-image.jpg" alt="Product Image">
+        </div>
+        <div class="thumbnails">
+            <!-- Thumbnail images here -->
+        </div>
+        <div class="product-details">
+            <p class="vendor">Product Vendor</p>
+            <h1 class="title">Product Title</h1>
+            <p class="price">$Price</p>
+            <p class="compare-price">Compare at $199</p>
+            <p class="discount">Percentage Off</p>
+            <select id="color-selector">
+                <option value="color1">Color 1</option>
+                <option value="color2">Color 2</option>
+                <!-- Add more color options as needed -->
+            </select>
+            <select id="size-selector">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <!-- Add more size options as needed -->
+            </select>
+            <input type="number" id="quantity" min="1" value="1">
+            <button id="add-to-cart">Add To Cart</button>
+            <p class="description">Description</p>
+        </div>
     </div>
-    <!-- Happy coding 😊 -->
-    <script src="./script.js"></script>
-</body>
 
+    <script src="script.js"></script>
+</body>
 </html>
+
